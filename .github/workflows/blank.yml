@@ -16,7 +16,7 @@ steps:
         echo "Starting deployment..."
         echo "======================================"
 
-        cd /home/ec2-user/node-cicd-demo/aws-ec2-cicd
+        cd /home/ec2-user/node-cicd-demo/aws-ec2-cicd3
 
         echo "1. Getting latest code..."
         git fetch origin main
