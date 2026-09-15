@@ -1,7 +1,7 @@
 const http = require("http");
 
 const PORT = process.env.PORT || 3000;
-const APP_ENV = process.env.APP_ENV || "DEV";
+const APP_ENV = process.env.APP_ENV || "Production";
 
 const server = http.createServer((req, res) => {
     res.writeHead(200, {
@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     });
 
     res.end(`
-        <h1>Hello this  is ${APP_ENV} env ITCAMPUSGURU </h1>
+        <h1>bullesah farmate h ${APP_ENV} env ITCAMPUSGURU </h1>
         <p>Application deployed using GitHub Actions → AWS EC2</p>
         <p>Environment: <strong>${APP_ENV}</strong></p>
     `);
